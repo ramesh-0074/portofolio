@@ -46,7 +46,7 @@ const AnimatedCard = () => {
           </div>
         </Link>
 
-        <Link href={"/"}>
+        <Link href={"tel:+917025107494"}>
           <div className="box box3">
             <span className="icon">
               <svg className="svg" viewBox="0 0 16 16">

@@ -11,7 +11,8 @@ export const projects = [
   {
     title: "StoreDada",
     url: "https://storedada.com/",
-    description: "Description of Project 1",
+    description:
+      "Developed the StoreDada platform, an all-in-one eCommerce solution designed to help businesses grow faster and more efficiently.",
     thumbnail: storedada,
     stack: [
       "NextJs",
@@ -26,7 +27,8 @@ export const projects = [
   {
     title: "V perfumes",
     url: "https://www.vperfumes.com/ae-en",
-    description: "Description of Project 2",
+    description:
+      "A perfumery brand with a blend of modernity & tradition. The V Perfumes commenced trading in 2010. With an experience of more than a decade in the wholesale & retail industry, it is now one of the largest retail perfume chains in the UAE offering the best perfumes in Dubai, UAE, Oman, KSA and Qatar.",
     thumbnail: vperfumes,
     stack: [
       "NextJs",
@@ -41,7 +43,8 @@ export const projects = [
   {
     title: "The fresh market Dubai",
     url: "https://www.thefreshmarketdubai.com/",
-    description: "Description of Project 3",
+    description:
+      "An e-commerce website offering fresh groceries and produce with fast delivery across Dubai.",
     thumbnail: fmrk,
     stack: [
       "NextJs",
@@ -56,7 +59,8 @@ export const projects = [
   {
     title: "Mattressland AE",
     url: "https://www.mattressland.ae/",
-    description: "Description of Project 3",
+    description:
+      "E-commerce platform for browsing and purchasing mattresses, bedding, and furniture.",
     thumbnail: mland,
     stack: [
       "NextJs",
@@ -71,7 +75,8 @@ export const projects = [
   {
     title: "Sidcofoods AE",
     url: "https://www.sidcofoods.ae/",
-    description: "Description of Project 3",
+    description:
+      "Online store for frozen foods, dairy products, and groceries with home delivery service.",
     thumbnail: sidco,
     stack: [
       "NextJs",
@@ -86,7 +91,7 @@ export const projects = [
   {
     title: "Mamame Iq",
     url: "https://www.mamame.iq/",
-    description: "Description of Project 3",
+    description: "A trusted online destination for mothers in Iraq, offering a wide range of carefully selected, reliable products for newborn and maternal care.",
     thumbnail: mme,
     stack: [
       "NextJs",
@@ -101,7 +106,8 @@ export const projects = [
   {
     title: "Second skin AE",
     url: "https://www.secondskin.ae/",
-    description: "Description of Project 3",
+    description:
+      "Secondskin is the one stop shop in the U.A.E for women who are looking for both modern and traditional Bride, Nightwear, Lounge Wear, Maternity, Lingerie and Evening Gowns.",
     thumbnail: skin,
     stack: [
       "NextJs",
@@ -116,7 +122,7 @@ export const projects = [
   {
     title: "Fresh Fruit Mart",
     url: "https://www.freshfruitmart.ae/",
-    description: "Description of Project 3",
+    description: "Fresh Fruit Mart is a trusted retailer with over 28 years of experience, specializing in high-quality fresh fruits and vegetables from around the globe. Known for exceptional product variety, unbeatable freshness, and competitive pricing, we take pride in delivering satisfaction with every order. ",
     thumbnail: ffm,
     stack: [
       "NextJs",

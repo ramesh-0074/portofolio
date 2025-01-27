@@ -71,13 +71,14 @@ export default function Home({}: Props) {
         I am a Full Stack Developer
       </motion.h1>
       <ul className="flex items-center justify-center gap-5 w-full text-lg font-bold">
+        <a href={"/Ramesh_P_R.pdf"} download={"Ramesh_Resume.pdf"}>
         <li
           className="relative px-4 py-2 rounded-3xl overflow-hidden border border-black text-black dark:border-white dark:text-white shadow-2xl 
         transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm
          before:bg-black dark:before:bg-white before:duration-300 before:ease-out hover:text-white dark:hover:text-black  hover:shadow-black dark:hover:shadow-white  hover:before:h-40 hover:before:w-40 hover:before:opacity-80"
         >
           <span className="relative z-10">Resume</span>
-        </li>
+        </li></a>
         <button
           className="before:ease relative px-4 py-2 rounded-3xl overflow-hidden border border-green-500 dark:border-violet-500 bg-green-500 dark:bg-violet-500 text-white shadow-2xl transition-all 
         before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 
