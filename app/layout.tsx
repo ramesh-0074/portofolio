@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/shared/Header";
 import Footer from "@/shared/Footer";
 import { headers } from "next/headers";
 import CustomCursor from "@/shared/CustomCursor";
 import CurtainDropAnimation from "@/shared/Curtain";
+import {League_Spartan, Titillium_Web} from "next/font/google"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const leagueSpartan = League_Spartan({
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+const titilliumWeb = Titillium_Web({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "600", "700", "900"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Ramesh P R - Full stack Developer Portfolio",
@@ -45,7 +45,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden h-screen bg-[#C1E8FF] dark:bg-[#021024] text-[#212529] md:text-[#EDEDED]`}
+        className={` ${leagueSpartan.className} ${titilliumWeb.className} antialiased overflow-x-hidden h-screen bg-[#C1E8FF] dark:bg-[#021024] text-[#212529] md:text-[#EDEDED]`}
       >
         <CurtainDropAnimation />
         <CustomCursor />

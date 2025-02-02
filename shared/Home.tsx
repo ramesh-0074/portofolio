@@ -55,7 +55,7 @@ export default function Home({}: Props) {
       </motion.div>
 
       <motion.h2
-        className="text-2xl font-bold md:text-4xl text-[#1c2e4a] dark:text-[#C1E8FF]"
+        className="text-3xl font-bold md:text-6xl text-[#1c2e4a] dark:text-[#C1E8FF]"
         initial={{ opacity: 0, x: -70, scale: 0.95 }}
         animate={{ opacity: 1, x: 0, scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
@@ -63,7 +63,7 @@ export default function Home({}: Props) {
         Hello, My name is Ramesh P R
       </motion.h2>
       <motion.h1
-        className="text-lg md:text-xl font-semibold text-[#052659] dark:text-[#C1E8FF] py-2"
+        className="text-lg md:text-3xl font-semibold text-[#052659] dark:text-[#C1E8FF] py-2"
         initial={{ opacity: 0, x: 70, scale: 0.95 }}
         animate={{ opacity: 1, x: 0, scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}

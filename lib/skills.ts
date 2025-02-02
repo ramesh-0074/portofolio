@@ -33,3 +33,11 @@ export const upComingSkills = [
   { name: "Nginx", highlight: false },
   { name: "Kubernetes", highlight: false },
 ];
+
+export const excitingSkills = [
+  {name: "AI", highlight: true},
+  {name: "ML", highlight: false},
+  {name: "Cloud", highlight: false},
+  {name: "AWS - S3", highlight: true},
+  {name: "AWS - EC2", highlight: true},
+]

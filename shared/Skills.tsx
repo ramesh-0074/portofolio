@@ -1,5 +1,5 @@
 "use client";
-import { skills, upComingSkills } from "@/lib/skills";
+import { excitingSkills, skills, upComingSkills } from "@/lib/skills";
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -141,13 +141,13 @@ export default function Skills({}: Props) {
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
         transition={{ duration: 1.5, ease: "circIn" }}
-        className="text-center text-[#1c2e4a] dark:text-[#C1E8FF] text-2xl underline pb-2 md:text-4xl font-semibold"
+        className="text-center text-[#1c2e4a] dark:text-[#C1E8FF] text-2xl underline pb-6 md:text-4xl font-bold"
       >
         What I am good at
       </motion.div>
       <ul
         ref={skillsRef}
-        className="flex flex-wrap items-center py-2 justify-center text-sm md:text-base font-semibold md:font-bold"
+        className="flex flex-wrap items-center py-4 justify-center text-sm md:text-base font-semibold md:font-bold"
       >
         {skills.map((skill, index) => (
           <motion.li
@@ -174,12 +174,42 @@ export default function Skills({}: Props) {
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
         transition={{ duration: 1.5, ease: "circIn" }}
-        className="text-center text-[#1c2e4a] dark:text-[#C1E8FF] text-2xl underline pb-2 md:text-4xl font-semibold"
+        className="text-center text-[#1c2e4a] dark:text-[#C1E8FF] text-2xl underline pb-5 md:text-4xl font-bold"
       >
         Things that I am working on
       </motion.div>
-      <ul ref={upComingSkillsRef} className="flex flex-wrap items-center justify-center text-sm md:text-base font-semibold md:font-bold">
+      <ul ref={upComingSkillsRef} className="flex my-3 md:my-7 flex-wrap items-center justify-center text-sm md:text-base font-semibold md:font-bold">
         {upComingSkills.map((skill, index) => (
+          <motion.li
+            key={index}
+            className={`group relative mx-2 my-2 px-4 py-2 rounded-3xl text-center  overflow-hidden border-2 border-[#5483B3] dark:border-[#7da0ca] ${skill.highlight ? 'dark:text-white': 'dark:text-[#5483B3] text-[#5483B3]'} ${
+              skill.highlight
+                ? `before:ease relative px-4 py-2 rounded-3xl overflow-hidden border border-[#5483B3] dark:border-[#7da0ca] bg-[#5483B3] dark:bg-[#7da0ca]  shadow-2xl transition-all
+                before:absolute before:right-0 before:top-0 before:w-6 before:translate-x-12
+                before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-[#5483B3] dark:hover:shadow-[#7da0ca]  hover:before:-translate-x-40`
+                : ""
+            }`}
+          >
+              <div
+              className={`absolute inset-0 w-0 bg-[#5483B3] dark:bg-[#7da0ca] transition-all duration-[250ms] ease-out group-hover:w-full`}
+            ></div>
+            <span className="relative z-10 group-hover:text-white">
+              {skill.name}
+            </span>
+          </motion.li>
+        ))}
+      </ul>
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -30 }}
+        transition={{ duration: 1.5, ease: "circIn" }}
+        className="text-center text-[#1c2e4a] dark:text-[#C1E8FF] text-2xl underline pb-5 md:text-4xl font-bold"
+      >
+        Things that I am excited about
+      </motion.div>
+      <ul ref={upComingSkillsRef} className="flex flex-wrap items-center justify-center text-sm md:text-base font-semibold md:font-bold">
+        {excitingSkills.map((skill, index) => (
           <motion.li
             key={index}
             className={`group relative mx-2 my-2 px-4 py-2 rounded-3xl text-center  overflow-hidden border-2 border-[#5483B3] dark:border-[#7da0ca] ${skill.highlight ? 'dark:text-white': 'dark:text-[#5483B3] text-[#5483B3]'} ${

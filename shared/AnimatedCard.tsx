@@ -18,7 +18,7 @@ const AnimatedCard = () => {
             <path d="M28 6c0 3.3-4 4.7-4 8 0 1.1-.9 2-2 2s-2-.9-2-2c0-5.3 6-6.7 6-10 0-1.1.9-2 2-2s2 .9 2 2zm12 0c0 3.3-4 4.7-4 8 0 1.1-.9 2-2 2s-2-.9-2-2c0-5.3 6-6.7 6-10 0-1.1.9-2 2-2s2 .9 2 2z" />
           </svg>
         </div>
-        <Link href={"/"}>
+        <Link href={"https://www.instagram.com/_ramesh_rajendran_/"}>
           <div className="box box1">
             <span className="icon">
               <svg
@@ -32,7 +32,7 @@ const AnimatedCard = () => {
           </div>
         </Link>
 
-        <Link href={"/"}>
+        <Link href={"https://www.linkedin.com/in/ramesh-pr/"}>
           <div className="box box2">
             <span className="icon">
               <svg
@@ -46,7 +46,7 @@ const AnimatedCard = () => {
           </div>
         </Link>
 
-        <Link href={"tel:+917025107494"}>
+        <a href={"tel:+917025107494"}>
           <div className="box box3">
             <span className="icon">
               <svg className="svg" viewBox="0 0 16 16">
@@ -55,7 +55,7 @@ const AnimatedCard = () => {
               </svg>
             </span>
           </div>
-        </Link>
+        </a>
 
         <div className="box box4" />
       </div>

@@ -33,7 +33,7 @@ export default function Experience() {
       id="experience"
       className="container mx-auto w-full min-h-[600px] px-4 py-8 flex flex-col items-center justify-center"
     >
-      <h2 className="text-2xl text-[#1c2e4a] dark:text-[#C1E8FF] underline pb-4 md:text-4xl font-semibold">Experience</h2>
+      <h2 className="text-[#1c2e4a] dark:text-[#C1E8FF] text-2xl underline pb-7 md:text-5xl font-bold">Experience</h2>
       <div className="timeline relative border-l-2 border-gray-300 pl-0">
         {experiences.map((item, index) => (
           <div
@@ -49,7 +49,7 @@ export default function Experience() {
                 className="object-contain w-full rounded-full p-1 md:p-2"
               />
             </div>
-            <h3 className="dark:text-black text-white text-xl font-semibold">{item.role}</h3>
+            <h3 className="dark:text-black text-white text-xl md:text-2xl font-semibold">{item.role}</h3>
             <p className="dark:text-black text-white text-sm">
               {item.startDate} - {item.current ? "Present" : item.endDate}
             </p>

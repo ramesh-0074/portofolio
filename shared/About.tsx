@@ -87,7 +87,7 @@ export default function About({}: Props) {
       <motion.div
         variants={textVariants}
         animate="blinking"
-        className="flex items-center justify-center text-[#1c2e4a] dark:text-[#C1E8FF] text-2xl underline pb-2 md:text-4xl font-semibold"
+        className="flex items-center justify-center text-[#1c2e4a] dark:text-[#C1E8FF] text-2xl underline pb-2 md:text-5xl font-bold"
        
       >
         About Me

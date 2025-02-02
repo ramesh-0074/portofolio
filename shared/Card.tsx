@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 import { gsap } from "gsap";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
@@ -17,19 +17,19 @@ type Props = {
 };
 
 function Card({ title, index, url, description, thumbnail, stack }: Props) {
-  const cardRef = useRef<HTMLDivElement>(null);
-  const titleRef = useRef<HTMLHeadingElement>(null);
-  const descriptionRef = useRef<HTMLParagraphElement>(null);
-  const stackRef = useRef<HTMLDivElement>(null);
+  const cardRef = React.useRef<HTMLDivElement>(null);
+  const titleRef = React.useRef<HTMLHeadingElement>(null);
+  const descriptionRef = React.useRef<HTMLParagraphElement>(null);
+  const stackRef = React.useRef<HTMLDivElement>(null);
+  const [isFlipped, setIsFlipped] = React.useState(false);
   let isMobile = false;
+
   if (window != undefined) {
     const userAgent = window?.navigator.userAgent;
     isMobile = useParser(userAgent);
   }
 
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  useEffect(() => {
+  React.useEffect(() => {
     if (isMobile) return; // Skip animation for mobile devices
 
     const card = cardRef.current;

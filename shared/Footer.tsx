@@ -1,6 +1,12 @@
 import Link from "next/link";
 import React from "react";
-import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 
 type Props = {
   userAgent?: string;
@@ -65,27 +71,27 @@ export default function Footer({ userAgent = "" }: Props) {
       </div>
       <ul className="w-full fixed bottom-0 md:relative dark:bg-[#5483B3] bg-[#052659] text-white flex justify-center md:justify-end items-center p-3 gap-7 md:gap-5">
         <li>
-          <Link href={"/"}>
+          <Link href={"https://github.com/RAMESH189"}>
             <FaGithub className="text-3xl md:text-2xl" />
           </Link>
         </li>
         <li>
-          <Link href={"/"}>
+          <Link href={"https://www.instagram.com/_ramesh_rajendran_/"}>
             <FaInstagram className="text-3xl md:text-2xl" />
           </Link>
         </li>
         <li>
-          <Link href={"/"}>
+          <Link href={"https://www.linkedin.com/in/ramesh-pr/"}>
             <FaLinkedin className="text-3xl md:text-2xl" />
           </Link>
         </li>
         <li>
-          <Link href={"/"}>
+          <a href="tel:+917025107494">
             <FaWhatsapp className="text-3xl md:text-2xl" />
-          </Link>
+          </a>
         </li>
         <li>
-        <Link href={"/"}>
+          <Link href={"https://www.youtube.com/@kratospeare"}>
             <FaYoutube className="text-3xl md:text-2xl" />
           </Link>
         </li>
